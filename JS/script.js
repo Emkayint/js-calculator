@@ -8,7 +8,8 @@ setInterval(function showChar(){
             demo.innerHTML = demo.innerHTML + myText.charAt(i++);
             setTimeout(start, 50);
         }
-    })
+    })();
+    demo.innerHTML = "";
 })
 
 
