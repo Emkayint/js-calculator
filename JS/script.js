@@ -21,11 +21,10 @@ setInterval(function showChar(){
     (function programmer(){
         if(x < str.length){
             pro.innerHTML = pro.innerHTML + str.charAt(x++);
-            setTimeout(programmer, 100);
+            setTimeout(programmer, 500);
         }
     })();
     pro.innerHTML = "";
 })();
 
-// showChar2();
 
