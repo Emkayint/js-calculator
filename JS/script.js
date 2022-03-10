@@ -1,16 +1,14 @@
-(function($){
-    $.fn.writeText = function(content){
-        let contentArr = content.split(""),
-            current = 0,
-            elem = this;
-        setInterval(function(){
-            if(current < contentArr.length){
-                elem.text(elem.text() + contentArr[current++])
-            }
-        }, 100);
-    };
-})(jQuery);
+setInterval(function showChar(){
+    let elem = document.getElementById('demo');
+    let i = 0;
+    let myText = "Work with no play makes Jack a dull boy";
 
-$("#p").writeText("This is My Name");
+    (function start(){
+        if(i < myText.length){
+            demo.innerHTML = demo.innerHTML + myText.charAt(i++);
+            setTimeout(start, 50);
+        }
+    })
+})
 
 
